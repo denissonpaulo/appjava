@@ -1,11 +1,79 @@
+@Entity
+
 public class NotaFiscal {
 
     //Atributos 
-    String descricao;
-    Float quantidade;
-    Float valor;
+    public Long id;
+    public String descricao;
+    public Float quantidade;
+    public Float preco;
+    public String qrCode;
+    Public String chaveAcesso;
 
 
 
+    //creat gets and sets
+    public Long getId() {
+                     return id;
+           }
+   
+           public void setId(Long id) {
+                     this.id = id;
+           }
+   
+           public String getDescricao() {
+                     return descricao;
+           }
+   
+           public void setDescricao(String descricao) {
+                     this.descricao = descricao;
+           }
+
+              
+           public Float getQuantidade() {
+                     return quantidade;
+           }
+   
+           public void setQuantidade(String quantidade) {
+                     this.quantidade = quantidade;
+           }
+   
+           public Float getPreco() {
+                     return preco;
+           }
+   
+           public void setPreco(Float preco) {
+                     this.preco = preco;
+           }
+
+              
+           public String getQRCode(String qrCode) {
+                     return qrCode;
+           }
+   
+           public void setQRCode(String qrCode) {
+                     this.qrCode = qrCode;
+           }
+
+              
+           public String getChaveAcesso(String chaveAcesso) {
+                     return chaveAcesso;
+           }
+   
+           public void setChaveAcesso(String chaveAcesso) {
+                     this.chaveAcesso = chaveAcesso;
+           }
+
+
+
+
+    //Metódos
+    public searchNF(){
+        findNF();
+    }
+
+    public downloadNF(){
+        saveNF();
+    }
 
 }
