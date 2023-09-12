@@ -1,0 +1,11 @@
+public class NotaFiscal {
+
+    //Atributos 
+    String descricao;
+    Float quantidade;
+    Float valor;
+
+
+
+
+}
